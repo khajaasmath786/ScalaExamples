@@ -1,20 +1,21 @@
 package com.mcd.session5
-
-package com.mcd.session5
+// This example shows you overding abstract method of one trait in another trait.
 trait Logger5 {
   def log(msg: String) // This is sbstract method of trait. You should use abstract keyword when extending it and using with layered traits. If not then simply override is fine
   
   
 }
-trait ConsoleLogger5 extends Logger5 {
-  override def log(msg: String) = {
-    println(msg)
-  }
-}
+
 trait TimestampLogger5 extends Logger5 {
   abstract override def log(msg: String) = {  // Remove asbtract here and see
     super.log(new java.util.Date() + " " + msg)
   } // This is concrete method of trait
+}
+
+trait ConsoleLogger5 extends Logger5 {
+  override def log(msg: String) = {
+    println(msg)
+  }
 }
 
 class Account5 {
@@ -38,6 +39,5 @@ object TraitConcreteEx5 extends App // Make sure you have app here or main metho
 {
  var acct1= new SavingsAccount5 with ConsoleLogger5 with TimestampLogger5 
  acct1.withDrawAmount(50)
-  var acct2= new SavingsAccount5 with ConsoleLogger5 with TimestampLogger5 
- acct2.withDrawAmount(67) 
+
 }
