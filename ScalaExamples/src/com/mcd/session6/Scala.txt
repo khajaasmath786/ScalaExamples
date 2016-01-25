@@ -1,0 +1,51 @@
+Scala is compile and interpreted language where as java is only complile language.
+Java code is compliled first and then run. In case of complile, error is thrown at any point in java code 
+where as in case of interpreter, its is step by step process. if there is any error in step6, it will result in error only at that point.
+
+phython,javascript etc are interpreted languages.
+Java is compile language
+
+In interpretted language, compiling building and deploying code is very very less.
+
+REPL --> Read Evaluate Print loop
+
+Scala has interpretation and compliling mode. while doing prototyping, use interpreter mode and while deploying into production you can use
+complier mode.
+scala also has scalac and scala similar to javac and java
+
+advantage of scala is you can caught that error during complile time but not in phython etc.
+------------------------------------------------------------------------------------------------
+Spark is build on top of map reduce model which supports iterative algorithms, stream processing etc
+
+It is backward compatabile that is hive queries that are written can be run on spark.
+
+Bacth computing:
+
+Stream computing:
+------------------------------------------------------------------------------------------------
+
+Functional Programming:
+
+You can treat function as variable.
+pass funttion as argument to a function ---> This is called as Higher order function.
+Retun function as an argument.
+Have array of functions.
+
+All these are not possible in java.
+
+
+------------------------------------------------Modeule 2-------------------------------------------------------------------------------
+
+
+Scala is language which runs on top of java.
+Java take care of memmory management that is one advanatage in java. Java is complile language that is error is caught at comile time before executing it.
+
+Scala is OO, Funcational Programing..
+Features--> Automatically Type Inference, 
+
+
+Type of Null: In java you keep on checking if variable is null or not, 
+Scala doesnt have null and avoids NullPointerException.
+
+
+Pattern Matching, collection.
